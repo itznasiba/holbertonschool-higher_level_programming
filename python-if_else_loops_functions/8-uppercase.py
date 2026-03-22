@@ -6,3 +6,4 @@ def uppercase(str):
             print("{}".format(str[i]), end="")
         elif str[i] >= 'a' and str[i] <= 'z':
             print("{}".format(chr(ord(str[i]) - 32)), end="")
+    print(" ")
