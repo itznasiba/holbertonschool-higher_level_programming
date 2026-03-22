@@ -6,4 +6,4 @@ if __name__ == "__main__":
     # Iterate through all arguments except the script name
     for i in range(1, len(sys.argv)):
         total += int(sys.argv[i])
-    print("{}".format(total))
+print("{}".format(total))
