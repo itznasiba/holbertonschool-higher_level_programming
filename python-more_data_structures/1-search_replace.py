@@ -3,8 +3,11 @@
 def search_replace(my_list, search, replace):
     """
     replace number
-    """ 
+    """
+    new_list = []
     for i in my_list:
         if i == search:
-            i = replace
+            new_list.append(replace)
+        else:
+            new_list.append(i)
     return my_list
