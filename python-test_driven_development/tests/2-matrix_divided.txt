@@ -63,6 +63,7 @@ Testing TypeError for matrix (list of lists containing strings):
     Traceback (most recent call last):
         ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
+
 Testing with float infinity and NaN in matrix / div is integer:
     >>> matrix = [[1, float('inf')], [float('nan'), 4]]
     >>> matrix_divided(matrix, 2)
