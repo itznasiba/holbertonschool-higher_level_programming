@@ -18,7 +18,7 @@ class Square:
         """
         size property
         """
-        return self.size
+        return self.__size
 
     @size.setter
     def size(self, value):
@@ -36,7 +36,7 @@ class Square:
         """
         position property
         """
-        return self.position
+        return self.__position
 
     @position.setter
     def position(self, value):
@@ -56,9 +56,9 @@ class Square:
         if self.__size == 0:
             print()
             return
-        print(self.__position[1]*"\n")
+        print(self.__position[1]*"\n",end="")
         for i in range(self.__size):
+            print(self.__position[0]*" ",end="")
             for j in range(self.__size):
-                print(self.__position[0]*" ",end="")
                 print("#", end="")
             print()
