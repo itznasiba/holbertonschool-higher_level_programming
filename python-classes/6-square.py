@@ -38,7 +38,8 @@ class Square:
         """
         return self.__position
 
-    @position.setter(self, value):
+    @position.setter
+    def position(self, value):
         """
         sets the position value
         """
