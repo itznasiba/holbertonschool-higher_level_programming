@@ -5,7 +5,7 @@ this module defines an empty square
 """
 
 
-class Recktangle:
+class Rectangle:
     """
     empty class to define square
     """
