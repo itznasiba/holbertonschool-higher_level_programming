@@ -9,9 +9,11 @@ class Rectangle:
     """
     empty class to define square
     """
-    def __init__(self, width=0, height=0):
+    def __init__(self, width=0, height=0, number_of_instances=0):
         self.width = width
         self.height = height
+        self.number_of_instances = 0
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -71,3 +73,8 @@ class Rectangle:
     def __repr__(self):
         """Returns a string representation to recreate the instance."""
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
+
+    def __del__(self):
+        """Prints the message when object is deleted"""
+        Rectangle.number_of_instances -= 1
+        return print("Bye rectangle...")
