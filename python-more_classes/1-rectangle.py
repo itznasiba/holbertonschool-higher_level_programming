@@ -5,7 +5,7 @@ this module defines an empty square
 """
 
 
-class Square:
+class Rectangle:
     """
     empty class to define square
     """
@@ -48,3 +48,4 @@ class Square:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
