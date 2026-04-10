@@ -2,11 +2,12 @@
 Test for MyList class
 =======================
 
+>>> MyList = __import__(1-my_list).MyList
+
 Check that it inherits from list:
     >>> issubclass(MyList, list)
     True
 
->>> MyList = __import__(1-my_list).MyList
 >>> mylist = MyList()
 >>> mylist
 >>> mylist = MyList([1, 4, 2])
