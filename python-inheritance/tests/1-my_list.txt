@@ -1,0 +1,5 @@
+=======================
+Test for MyList class
+=======================
+
+>>> MyList = __import__(1-my_list).MyList
