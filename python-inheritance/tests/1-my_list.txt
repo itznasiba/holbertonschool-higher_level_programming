@@ -6,13 +6,13 @@ Test for MyList class
 
 Check that it inherits from list:
     >>> issubclass(MyList, list)
-    True
+True
 
 >>> mylist = MyList()
 >>> mylist
 []
 >>> mylist = MyList([1, 4, 2])
-[1, 4, 2]
 >>> mylist = print_sorted()
->>> mylist
 [1, 2, 4]
+>>> mylist
+[1, 4, 2]
