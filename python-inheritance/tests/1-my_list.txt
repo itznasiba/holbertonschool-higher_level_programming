@@ -7,6 +7,8 @@ Check that it inherits from list:
     True
 
 >>> MyList = __import__(1-my_list).MyList
+>>> mylist = MyList()
+>>> mylist
 >>> mylist = MyList([1, 4, 2])
 >>> mylist = print_sorted()
 >>> mylist
