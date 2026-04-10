@@ -10,6 +10,9 @@ Check that it inherits from list:
 
 >>> mylist = MyList()
 >>> mylist
+[]
 >>> mylist = MyList([1, 4, 2])
+[1, 4, 2]
 >>> mylist = print_sorted()
 >>> mylist
+[1, 2, 4]
