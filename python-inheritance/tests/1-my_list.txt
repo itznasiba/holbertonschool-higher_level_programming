@@ -5,7 +5,7 @@ Test for MyList class
 >>> MyList = __import__('1-my_list').MyList
 
 Check that it inherits from list:
-    >>> issubclass(MyList, list)
+>>> issubclass(MyList, list)
 True
 
 >>> mylist = MyList()
