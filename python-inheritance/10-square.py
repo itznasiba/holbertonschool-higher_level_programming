@@ -3,10 +3,10 @@
 """
 this module defines an empty square
 """
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Rectangle = __import__('9-rectnagle').Rectangle
 
 
-class Square(BaseGeometry):
+class Square(Rectangle):
     """
     empty class to define square
     """
