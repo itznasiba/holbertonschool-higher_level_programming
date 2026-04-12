@@ -2,4 +2,37 @@
 tests BaseGeometry
 =====================
 
+>>> BaseGeometry = __import__('7-base_geometry.py').BaseGeometry
 
+>>> bg = BaseGeometry()
+
+>>> bg.area()
+Traceback (most recent call last):
+    ...
+Exception: area() is not implemented
+
+>>> bg.integer_validator("width", 10)
+>>> bg.integer_validator("width", "int")
+Traceback (most recent call last):
+    ...
+TypeError: name must be an integer
+
+>>> bg.integer_validator("width", 12.5)
+Traceback (most recent call last):
+    ...
+TypeError: weight must be an integer
+
+>>> bg.integer_validator("width", True)
+Traceback (most recent call last):
+    ...
+TypeError: weight must be an integer
+
+>>> bg.integer_validator("width", 0)
+Traceback (most recent call last):
+    ...
+ValueError: age must be greater than 0
+
+>>> bg.integer_validator("width", -1)
+Traceback (most recent call last):
+    ...
+ValueError: age must be greater than 0
