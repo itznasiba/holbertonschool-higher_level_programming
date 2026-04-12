@@ -1,37 +1,26 @@
 #!/usr/bin/env python3
 """
-This module demonstrates multiple inheritance with Fish, Bird, and FlyingFish.
+This module demonstrates Mixins by creating a Dragon class
+that can both swim and fly.
 """
 
 
-class Fish:
-    """Class representing a Fish."""
+class SwimMixin:
+    """Mixin to add swimming capability."""
     def swim(self):
-        print("The fish is swimming")
-
-    def habitat(self):
-        print("The fish lives in water")
+        print("The creature swims!")
 
 
-class Bird:
-    """Class representing a Bird."""
+class FlyMixin:
+    """Mixin to add flying capability."""
     def fly(self):
-        print("The bird is flying")
-
-    def habitat(self):
-        print("The bird lives in the sky")
+        print("The creature flies!")
 
 
-class FlyingFish(Fish, Bird):
+class Dragon(SwimMixin, FlyMixin):
     """
-    FlyingFish inherits from both Fish and Bird.
-    Because Fish is listed first, Python looks there first for methods.
+    Dragon class that inherits from both SwimMixin and FlyMixin.
+    It can swim, fly, and roar.
     """
-    def fly(self):
-        print("The flying fish is soaring!")
-
-    def swim(self):
-        print("The flying fish is swimming!")
-
-    def habitat(self):
-        print("The flying fish lives both in water and the sky!")
+    def roar(self):
+        print("The dragon roars!")
