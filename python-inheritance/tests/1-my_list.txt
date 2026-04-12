@@ -11,8 +11,24 @@ True
 >>> mylist = MyList()
 >>> mylist
 []
+
+>>> mylist.print_sorted()
+[]
+
 >>> mylist = MyList([1, 4, 2])
 >>> mylist.print_sorted()
 [1, 2, 4]
 >>> mylist
 [1, 4, 2]
+
+>>> mylist = MyList()
+>>> mylist.appensd(5)
+>>> mylist.appensd(-1)
+>>> mylist.appensd(0)
+>>> mylist.appensd(-9)
+>>> mylist.appensd(-2)
+>>> mylist.appensd(1)
+>>> mylist.print_sorted()
+[-9, -2, -1, 0, 1, 5]
+>> mylist
+[5, -1, 0, -9, -2, 1]
