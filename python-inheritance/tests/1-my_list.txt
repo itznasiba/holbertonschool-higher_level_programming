@@ -22,12 +22,12 @@ True
 [1, 4, 2]
 
 >>> mylist = MyList()
->>> mylist.appensd(5)
->>> mylist.appensd(-1)
->>> mylist.appensd(0)
->>> mylist.appensd(-9)
->>> mylist.appensd(-2)
->>> mylist.appensd(1)
+>>> mylist.append(5)
+>>> mylist.append(-1)
+>>> mylist.append(0)
+>>> mylist.append(-9)
+>>> mylist.append(-2)
+>>> mylist.append(1)
 >>> mylist.print_sorted()
 [-9, -2, -1, 0, 1, 5]
 >> mylist
