@@ -5,7 +5,7 @@
 """
 
 
-def is_kind_of_class(obj, a_class):
+def inherits_from(obj, a_class):
     """
     returns True if obj is instance of a_class  or
     instance of class inherited from
