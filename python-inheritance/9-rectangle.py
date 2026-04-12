@@ -21,14 +21,14 @@ class Rectangle(BaseGeometry):
         self.integer_validator("height", height)
         self.__height = height
 
-        def area(self):
-            """
-            calculates area
-            """
-            return self.__width*self.__height
+    def area(self):
+        """
+        calculates area
+        """
+        return self.__width*self.__height
 
-        def __str__(self):
-            """
-            str underscore functions
-            """
-            return "[Rectangle] {}/{}".format(self.__width, self.__height)
+    def __str__(self):
+        """
+        str underscore functions
+        """
+        return "[Rectangle] {}/{}".format(self.__width, self.__height)
