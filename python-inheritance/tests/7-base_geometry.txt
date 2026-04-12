@@ -66,3 +66,9 @@ Check integer_validator with None (TypeError):
 Traceback (most recent call last):
     ...
 TypeError: age must be an integer
+
+Check integer_validator with missing value argument (TypeError):
+>>> bg.integer_validator("age")
+Traceback (most recent call last):
+    ...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
