@@ -25,7 +25,7 @@ class Student:
     def to_json(self, attrs=None):
         """
         Retrieves a dictionary representation of a Student instance.
-        If attrs is a list of strings, only attributes contained in 
+        If attrs is a list of strings, only attributes contained in
         this list are retrieved.
 
         Args:
