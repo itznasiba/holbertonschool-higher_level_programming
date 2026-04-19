@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A script that adds all arguments to a Python list, 
+A script that adds all arguments to a Python list,
 and then saves them to a file.
 """
 import sys
@@ -19,7 +19,7 @@ if os.path.exists(filename):
 else:
     items = []
 
-# sys.argv[1:] captures all arguments passed to the script, excluding the script name
+# sys.argv[1:] captures all arguments passed to the script
 items.extend(sys.argv[1:])
 
 # Save the updated list back to the file
