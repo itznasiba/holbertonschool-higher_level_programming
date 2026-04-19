@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module contains a function that returns an object 
+This module contains a function that returns an object
 represented by a JSON string.
 """
 import json
