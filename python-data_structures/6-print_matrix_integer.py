@@ -13,5 +13,5 @@ def print_matrix_integer(matrix=[[]]):
             if i < len(row) - 1:
                 print(" ", end="")
 
-        # Print a newline at the end of each row (handles empty matrices properly too)
+        # Print a newline at the end of each row
         print()
