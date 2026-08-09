@@ -26,7 +26,8 @@ class Student:
         Args:
             attrs (list): Optional list of attribute names to retrieve.
         """
-        if isinstance(attrs, list) and all(isinstance(elem, str) for elem in attrs):
+        if (isinstance(attrs, list) and
+                all(isinstance(elem, str) for elem in attrs)):
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
 
